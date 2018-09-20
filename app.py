@@ -10,3 +10,7 @@ def blackwhite():
 			'bebek.jpg',
 			mimetype='image/jpeg'
 		)
+
+@app.route('/', methods=['GET'])
+def main():
+	return 'Its Works!'
