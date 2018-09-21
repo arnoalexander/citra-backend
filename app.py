@@ -15,7 +15,7 @@ def blackwhite():
 def main():
 	return 'Its Works!'
 
-@app.route('/process', method=['POST'])
+@app.route('/process', methods=['POST'])
 def process():
 	imagefile = request.files.get('image', '')
 	return send_file('input/bebk.jpg', mimetype='image/jpeg')
