@@ -20,4 +20,6 @@ def main():
 @app.route('/process', methods=['POST'])
 def process():
 	imagefile = request.files.get('image', '')
-	return send_file('input/nums.jpg', mimetype='image/jpeg')
+	resp = send_file('input/nums.jpg', mimetype='image/jpeg')
+	resp.headers['Access-Control-Allow-Origin'] = '*'
+	return resp
