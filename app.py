@@ -7,10 +7,15 @@ app = Flask(__name__)
 def blackwhite():
 	if 'media' in request.files:
 		return send_file(
-			'bebek.jpg',
+			'input/bebek.jpg',
 			mimetype='image/jpeg'
 		)
 
 @app.route('/', methods=['GET'])
 def main():
 	return 'Its Works!'
+
+@app.route('/process', method=['POST'])
+def process():
+	imagefile = request.files.get('image', '')
+	return send_file('input/bebk.jpg', mimetype='image/jpeg')
