@@ -17,7 +17,7 @@ flask-sqlalchemy = "*"
 "psycopg2" = "*"
 gunicorn = "*"
 numpy = "*"
-panda = "*"
+pandas = "*"
 Pillow = "*"
 
 
