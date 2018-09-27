@@ -18,6 +18,7 @@ flask-sqlalchemy = "*"
 gunicorn = "*"
 numpy = "*"
 panda = "*"
+Pillow = "*"
 
 
 [requires]
